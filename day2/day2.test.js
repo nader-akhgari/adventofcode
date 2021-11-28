@@ -9,4 +9,12 @@ describe("password philosophy", () => {
   it("should return 2", () => {
     expect(day2(fackData)).toEqual(2);
   });
+  it("should return an array of objects", () => {
+    const rowData = `
+      11-12 v: vvvvvvfvvvhvvv
+2-8 h: hlhhkhhchhhghh
+4-5 t: stntztttmp
+3-5 v: vvvmbvhvvvlvn`;
+
+  });
 });
