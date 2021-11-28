@@ -38,4 +38,4 @@ const day1Data = convertData(input);
 const day1Pair = day1(day1Data);
 const day1Three = day1PartTwo(day1Data)
 console.log("daya1 part 1 result:", day1Pair[0] * day1Pair[1]);
-console.log("daya1 part 2 result:", day1Three[0] * day1Three[1], day1Three[2]);
+console.log("daya1 part 2 result:", day1Three[0] * day1Three[1]* day1Three[2]);
