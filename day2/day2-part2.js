@@ -4,8 +4,10 @@ const input = require("./day2-input");
 const day2Part2 = (passData) => {
   const validPasses = passData.filter((pass) => {
     return (
-      pass.password[pass.min - 1] === pass.char &&
-      pass.password[pass.max - 1] !== pass.char
+      (pass.password[pass.min - 1] === pass.char &&
+        pass.password[pass.max - 1] !== pass.char) ||
+      (pass.password[pass.min - 1] !== pass.char &&
+        pass.password[pass.max - 1] === pass.char)
     );
   });
   return validPasses.length;
